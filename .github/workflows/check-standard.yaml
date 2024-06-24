@@ -41,6 +41,7 @@ jobs:
           use-public-rspm: false
 
       - name: Add r-universe to repos
+        if: false
         run: |
           cat("\nSys.unsetenv('PKGCACHE_HTTP_VERSION')\n", file = "~/.Rprofile", append = TRUE)
           cat("\noptions(repos=c(RMV='https://evercran.r-pkg.org/2024/06/22',CRAN ='https://cloud.r-project.org'))\n", file = "~/.Rprofile", append = TRUE)
