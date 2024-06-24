@@ -42,7 +42,7 @@ jobs:
 
       - name: Add r-universe to repos
         run: |
-          cat("\noptions(repos=c(CRAN='https://community.r-multiverse.org',CRAN2 ='https://cloud.r-project.org'))\n", file = "~/.Rprofile", append = TRUE)
+          cat("\noptions(repos=c(RUNI='https://shikokuchuo.r-universe.dev',CRAN ='https://cloud.r-project.org'))\n", file = "~/.Rprofile", append = TRUE)
         shell: Rscript {0}
 
       - name: Print profile
